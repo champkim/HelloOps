@@ -1,4 +1,4 @@
-name: CI
+name: Check code with eslint
 
 on:
   push:
@@ -12,7 +12,19 @@ jobs:
     
     steps:      
       - uses: actions/checkout@v3
-      
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: "16"
+          check-latest: true      
+      - name: Check
+        run: |
+            npm ci
+            npm run lint-diff
+        env:
+          CI: true
+          BASE: ${{github.base_ref}}
+          HEAD: ${{github.head_ref}}
+          
       - name: Run pwd
         run: pwd
         
