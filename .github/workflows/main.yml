@@ -19,11 +19,7 @@ jobs:
       - name: Check
         run: |
             npm ci
-            npm run lint-diff
-        env:
-          CI: true
-          BASE: ${{github.base_ref}}
-          HEAD: ${{github.head_ref}}
+            npm run lint-diff        
           
       - name: Run pwd
         run: pwd
