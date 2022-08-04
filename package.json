@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/champkim/HelloOps/issues"
   },
-  "homepage": "https://github.com/champkim/HelloOps#readme"
+  "homepage": "https://github.com/champkim/HelloOps#readme",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
 }
