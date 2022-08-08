@@ -23,14 +23,8 @@ jobs:
       - name: Prettier
         run: npm run format
 
-      - name: Lint
-        run: npm run lint
-
-      - name: Run pwd
-        run: pwd
-
-      - name: Run ls -al
-        run: ls -al
+      #- name: Lint
+      #  run: npm run lint
 
       - name: Save Code Linting Report JSON
         # npm script for ESLint
@@ -49,3 +43,10 @@ jobs:
         with:
           name: eslint_report.json
           path: eslint_report.json
+          
+      
+      - name: Run pwd
+        run: pwd
+
+      - name: Run ls -al
+        run: ls -al    
