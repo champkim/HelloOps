@@ -16,7 +16,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "indent": ["warn", 3], //단락 space 4
+    "indent": ["error", 3], //단락 space 4
     "semi": ["error", "always"],
     "keyword-spacing": 0,
     "no-unused-vars": 1,
